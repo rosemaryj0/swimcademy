@@ -1,0 +1,333 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    background-color: #F5FCFF;
+    font-family: 'Lato', sans-serif; /* Fallback to sans-serif if Lato is not available */
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif; /* Apply Montserrat to headers */
+  font-weight: 400;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+h4 {
+  /* black text heading! */
+  color: black; /* Change to the desired font color (e.g., red) */
+  background-color: #F5FCFF; /* Change to the desired background color (e.g., green) */
+  font-size: 36px;
+}
+
+h2 {
+  /* smaller black text heading! */
+  color: black; /* Change to the desired font color (e.g., red) */
+  background-color: #F5FCFF; /* Change to the desired background color (e.g., green) */
+  font-size: 26px;
+}
+
+h5 {
+  /* white text heading! */
+  color: #F5FCFF; /* Change to the desired font color (e.g., red) */
+  background-color: #0072AA; /* Change to the desired background color (e.g., green) */
+  font-size: 36px;
+}
+
+h3 {
+  /* smaller white text heading! */
+  color: #F5FCFF; /* Change to the desired font color (e.g., red) */
+  background-color: #0072AA; /* Change to the desired background color (e.g., green) */
+  font-size: 26px;
+}
+
+h6 {
+  font-size: 22px
+}
+
+p {
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.burger-menu {
+  display: none;
+}
+
+/* Define your styles */
+.logo-bar {
+  /* Style for the top bar */
+  padding-bottom: 15px; /* Adjust the value to your desired space */
+  height: 50px;
+}
+
+.nav-logo {
+  width: auto; /* Adjust the width as needed */
+  height: 40px; /* 40px for swimcademy logo */
+  padding-top: 12px;
+  padding-left: 12px;
+}
+
+.logo {
+  max-width: 90%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+nav ul {
+  /* Style for the navigation bar */
+  list-style: none; /* Remove default list styles */
+  background-color: #0072AA; /* Set the background color of the navigation bar */
+  padding: 10px 0; /* Add padding for better spacing */
+  padding-left: 10px;
+  text-align: left; /* Align text to the center */
+}
+
+nav ul li {
+  display: inline-block; /* Display list items horizontally */
+  margin-right: 20px; /* Add some space between items (adjust as needed) */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove margin from the last item */
+}
+
+nav ul li a {
+  color: #F5FCFF;
+  text-decoration: none;
+  padding: 8px 15px;
+  transition: color 0.3s ease;
+}
+
+/* Change color on hover */
+nav ul li a:hover {
+  color: #0072AA; /* New color on hover */
+  background-color: #F5FCFF;
+}
+
+.header-main .logo {
+  height: 60px;
+  width: 20%;
+  align-self: center;
+  cursor: pointer;
+}
+
+
+
+
+  .container-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a.blue-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #0072AA;
+    color: #F5FCFF;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+    border: 2px solid transparent; /* Transparent border initially */
+  }
+
+  a.blue-button:hover {
+    background-color: #F5FCFF;
+    color: #0072AA;
+    border-color: #0072AA;
+  }
+  
+  .registration-banner {
+    /* Style for the blue strip section */
+    position: relative;
+    height: 22vh; /* Set the section to full viewport height */
+    background-color: #0072AA;
+    text-align: center;
+    padding: 30px 0;
+    justify-content: center;
+  }
+
+  a.white-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #F5FCFF;
+    color: #0072AA;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+    border: 2px solid transparent; /* Transparent border initially */
+  }
+
+  a.white-button:hover {
+    background-color: #0072AA;
+    color: #F5FCFF;
+    border-color: #F5FCFF;
+  }
+  
+  .about-us-banner {
+    /* Style for the white strip section */
+    position: relative;
+    height: 50vh; /* viewport height */
+    background-color: #0072AA;
+    /*display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+  }
+
+  .white-grid-container {
+    /*position: absolute;*/
+    margin: auto;
+    background-color: #F5FCFF;
+    padding: 60px;
+    width: 50%;
+    /*align-items: center; /* Center items vertically */
+    display: grid;
+    grid-template-columns: 1fr 1.8fr;
+  }
+
+  .welcome-container-redo {
+    margin: 120px auto;
+    padding: 60px;
+    width: 36%;
+    background-color: #F5FCFF;
+    text-align: center;
+  }
+
+  .registration-about-us {
+    text-align: center;
+    padding-top: 30px; /* Adjust padding as needed */
+    padding-bottom: 60px;
+    background-color: #0072AA;
+  }
+
+/* NAV & INDEX MOBILE RESPONSIVE */
+
+  @media only screen and (max-width: 630px) {
+
+    nav ul {
+      text-align: center; /* Align text to the center */
+    }
+    
+    nav ul li {
+      padding: 6px;
+    }
+
+    .welcome-container-redo {
+      padding: 40px;
+      width: 60%;
+    }
+
+    .white-grid-container {
+      padding: 40px;
+      width: 70%;
+    }
+
+  }
+
+  @media only screen and (max-width: 1200px) {
+
+    .white-grid-container {
+      /*align-items: center; /* Center items vertically */
+      display:block;
+    }
+
+  }
+
+/* SESSION INFO PAGE */
+
+  .session-info-paragraph {
+    text-align: left; /* Align text to the left */
+    padding-top: 30px; /* Adjust padding as needed */
+    padding-bottom: 60px;
+  }
+
+  .paragraph-wrapper {
+    width: 58%; /* Take up 58% of the screen */
+    margin: 0 auto; /* Center the content horizontally */
+  }
+
+  .water-background {
+    /*height: 40vh; /* Set the section to full viewport height */
+    background-image: url('waterbackground.jpg');
+    background-size: cover;
+    background-position: center;
+    /*text-align: center;*/
+    padding: 10px 0;
+  }
+
+  .bubble-grid {
+    margin: auto;
+    padding: 60px;
+    width: 70%;
+    gap: 25px;
+    /*align-items: center; /* Center items vertically */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between; /* Distribute bubbles evenly */
+    text-align: center;
+  }
+
+  .private-bubble {
+    padding: 30px;
+    padding-bottom: 45px;
+    background-color: #0072AA;
+    text-align: center;
+    border-radius: 70px;
+  }
+
+  .private-bubble h3,
+  .private-bubble p {
+    color: #F5FCFF;
+    background-color: #0072AA;
+  }
+
+  .semi-private-bubble {
+    padding: 30px;
+    padding-bottom: 45px;
+    background-color: #20A3E2;
+    text-align: center;
+    border-radius: 70px;
+  }
+
+  .semi-private-bubble h3,
+  .semi-private-bubble p {
+    color: #F5FCFF;
+    background-color: #20A3E2;
+  }
+
+/* SESSION INFO MOBILE RESPONSIVE */
+
+  @media only screen and (max-width: 1200px) {
+
+    .paragraph-wrapper {
+      width: 70%;
+    }
+
+  }
+
+  @media only screen and (max-width: 950px) {
+    
+    .bubble-grid {
+      grid-template-columns: 1fr 1fr;
+      padding-left: 20px;
+    }
+
+  }
+
+/* REGISTER PAGE */
+
+  .iframe-container {
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+  footer {
+    /* Style for the footer */
+  }
