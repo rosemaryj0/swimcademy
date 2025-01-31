@@ -316,7 +316,6 @@ nav ul li a:hover {
   
   .instructor-bubble {
     padding: 10px;
-
     text-align: center;
   }
 
@@ -340,6 +339,7 @@ nav ul li a:hover {
     .instructor-grid {
         grid-template-columns: 1fr;
         justify-content: center;
+        gap: 15px;
     }
 
   }
