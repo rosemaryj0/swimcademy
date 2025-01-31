@@ -338,7 +338,8 @@ nav ul li a:hover {
     }
 
     .instructor-grid {
-      grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
+        justify-content: center;
     }
 
   }
