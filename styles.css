@@ -94,7 +94,7 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-  color: #F5FCFF;
+  color: #F5FCFF !important;
   text-decoration: none;
   padding: 8px 15px;
   transition: color 0.3s ease;
@@ -102,7 +102,7 @@ nav ul li a {
 
 /* Change color on hover */
 nav ul li a:hover {
-  color: #0072AA; /* New color on hover */
+  color: #0072AA !important; /* New color on hover */
   background-color: #F5FCFF;
 }
 
@@ -113,7 +113,13 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-
+/* HREF colour */
+a:link {
+  color: #0072AA; /* Default color for unvisited links */
+}
+a:visited {
+  color: #0072AA; /* Color for visited links */
+}
 
 
   .container-content {
