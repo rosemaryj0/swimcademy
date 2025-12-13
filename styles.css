@@ -259,7 +259,7 @@ a:visited {
 
   .water-background {
     /*height: 40vh; /* Set the section to full viewport height */
-    background-image: url('waterbackground.jpg');
+    background-image: url('waterbackground.webp');
     background-size: cover;
     background-position: center;
     /*text-align: center;*/
