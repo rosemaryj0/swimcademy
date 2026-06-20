@@ -58,13 +58,13 @@ p {
 /* Define your styles */
 .logo-bar {
   /* Style for the top bar */
-  padding-bottom: 15px; /* Adjust the value to your desired space */
+  padding-bottom: 10px; /* Adjust the value to your desired space */
   height: 50px;
 }
 
 .nav-logo {
   width: auto; /* Adjust the width as needed */
-  height: 40px; /* 40px for swimcademy logo */
+  height: 36px; /* 40px for swimcademy logo */
   padding-top: 12px;
   padding-left: 12px;
 }
