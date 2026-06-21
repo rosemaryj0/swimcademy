@@ -146,6 +146,7 @@ a:visited {
     font-weight: 400;
     transition: background-color 0.3s ease;
     border: 2px solid transparent; /* Transparent border initially */
+    border-radius: 9px;
   }
 
   a.blue-button:hover {
@@ -174,6 +175,7 @@ a:visited {
     font-weight: 400;
     transition: background-color 0.3s ease;
     border: 2px solid transparent; /* Transparent border initially */
+    border-radius: 9px;
   }
 
   a.white-button:hover {
@@ -201,6 +203,7 @@ a:visited {
     /*align-items: center; /* Center items vertically */
     display: grid;
     grid-template-columns: 1fr 1.8fr;
+    border-radius: 18px;
   }
 
   .welcome-container-redo {
@@ -209,6 +212,7 @@ a:visited {
     width: 36%;
     background-color: #F5FCFF;
     text-align: center;
+    border-radius: 18px;
   }
 
   .registration-about-us {
