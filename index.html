@@ -68,13 +68,17 @@
       <style>
         .reviews-section { padding: 20px 20px 50px; text-align: center; }
         .reviews-section h4 { margin-bottom: 0px; padding-bottom: 25px;}
-        .reviews-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1000px; margin: 0 auto 30px; padding-bottom: 10px; padding-top: 5px;}
+        .reviews-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1000px; margin: 0 auto 10px; padding-bottom: 0px; padding-top: 5px;}
         .review-card { background: #fff; border: 1px solid #e0e0e0; border-radius: 10px; padding: 20px; max-width: 300px; flex: 1 1 260px; text-align: left; box-shadow: 0 1px 4px rgba(0,0,0,0.05); display: flex; flex-direction: column; }
         .review-stars { color: #f5a623; font-size: 16px; letter-spacing: 2px; margin-bottom: 10px; }
         .review-text { font-size: 14px; line-height: 1.6; color: #333; background-color: #fff; margin-bottom: 15px; flex-grow: 1; }
         .review-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #eee; padding-top: 10px; font-size: 13px; }
         .review-name { font-weight: 700; color: black; }
         .review-google { display: flex; align-items: center; gap: 5px; color: #777; }
+        .reviews-see-more { max-width: 1000px; margin: 0 auto; text-align: right; padding: 0 0 30px; }
+        @media (max-width: 1000px) {
+          .reviews-see-more { text-align: center; }
+        }
       </style>
       <h4>Feedback From Our Parents & Students</h4>
       <div class="reviews-grid">
@@ -116,7 +120,10 @@
         </div>
  
       </div>
-      <a href="https://maps.app.goo.gl/aL5NzzQqTRgMqQR78" class="blue-button" target="_blank" rel="noopener">Read Our Google Reviews</a>
+      <div class="reviews-see-more">
+        <a href="https://maps.app.goo.gl/aL5NzzQqTRgMqQR78" target="_blank" rel="noopener" style="font-size: 13px; color: #555; text-decoration: underline;">See more Google reviews &rarr;</a>
+      </div>
+      <a href="https://g.page/r/CUPlOKXE349NEAI/review" class="blue-button" target="_blank" rel="noopener">Leave a Review!</a>
     </section>
   </main>
 
