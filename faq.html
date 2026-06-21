@@ -7,7 +7,65 @@
   <link rel="stylesheet" href="styles.css"> <!--link css-->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
  <!--link fonts-->
- 
+
+  <style>
+    :root{
+      --deep:#0072AA;
+      --ink:#11324A;
+      --white:#FFFFFF;
+    }
+
+    .faq-category{
+      margin-top:48px;
+    }
+
+    .faq-category:first-of-type{
+      margin-top:8px;
+    }
+
+    .faq-category__label{
+      background-color:transparent;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-family:'Montserrat', sans-serif;
+      font-weight:700;
+      font-size:14px;
+      letter-spacing:0.1em;
+      text-transform:uppercase;
+      color:var(--deep);
+      margin:0 0 18px;
+      padding-bottom:10px;
+      border-bottom:2px solid rgba(0,114,170,0.15);
+    }
+
+    .faq-category__label svg{
+      width:18px;
+      height:18px;
+      stroke:var(--deep);
+      flex-shrink:0;
+    }
+
+    .faq-item{
+      background:var(--white);
+      border-left:3px solid var(--deep);
+      border-radius:10px;
+      padding:20px 24px;
+      margin-bottom:14px;
+      box-shadow:0 4px 14px -6px rgba(0,114,170,0.18);
+    }
+
+    @media only screen and (max-width: 630px){
+      .paragraph-wrapper{
+        width: 85%;
+      }
+
+      .faq-item{
+        padding:16px 18px;
+      }
+    }
+  </style>
+
 </head>
 <body>
   <header class="header-main">
@@ -33,44 +91,98 @@
         <div class="paragraph-wrapper">
             <h4>FAQ</h4>
 
-            <h2>Why should I choose Swimcademy?</h2>
-            <p>With Swimcademy, you're guaranteed to have a fully certified instructor with 4+ years of teaching experience, and a competitive swimming background. We are fully licensed by the Lifesaving Society to teach and evaluate to their standard, assuring your child will work on important skills that are transferrable to programs offered by the town and other organizations. Our instructors are dedicated to each swimmer and helping them succeed. We pride ourselves in our attention to technique and use personalized lesson plans to see results!<br><br></p>
-          
-            <h2>What ages do you teach?</h2>
-            <p>We teach ages 3+, including teens and adults!<br><br></p>
+            <div class="faq-category">
+              <p class="faq-category__label">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v4a1 1 0 0 0 1 1h4"></path><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2Z"></path><path d="M9 13h6"></path><path d="M9 17h6"></path></svg>
+                Basic Info
+              </p>
 
-            <h2>How many sessions should I register for?</h2>
-            <p>This depends on your swimming goals. If you are looking to pass a Swim for Life level, we recommend registering for 2 or more sessions since 1 week is normally not enough time to fully master the skills required to pass a level.<br><br></p>
-            
-            <h2>What do I need to bring to my first lesson?</h2>
-            <p>​Please arrive in your swimsuit. Bring a towel, goggles (if needed), and your swimmer's previous report card (if you have one). We ask to please apply any water-resistant sunscreen at least 30 min. before entering the pool. We have a child-size (30-60 lbs.) PFD for learning certain aquatic skills. You're free to bring your own but this isn't necessary. Consider also bringing a hair tie and a water bottle.<br><br></p>
+              <div class="faq-item">
+                <h2 style="background-color: transparent; padding: 0px;">Why should I choose Swimcademy?</h2>
+                <p style="background-color: transparent;">With Swimcademy, you're guaranteed to have a fully certified instructor with 4+ years of teaching experience, and a competitive swimming background. We are fully licensed by the Lifesaving Society to teach and evaluate to their standard, assuring your child will work on important skills that are transferrable to programs offered by the town and other organizations. Our instructors are dedicated to each swimmer and helping them succeed. We pride ourselves in our attention to technique and use personalized lesson plans to see results!</p>
+              </div>
 
-            <h2>Do you have a bathroom and change room?</h2>
-            <p>We have an indoor bathroom available to students and parents! We still request however that students please use the bathroom before arrival, and arrive in their swimsuits to avoid delays or interruptions to their lessons.<br><br></p>
+              <div class="faq-item">
+                <h2 style="background-color: transparent; padding: 0px;">What ages do you teach?</h2>
+                <p style="background-color: transparent;">We teach ages 3+, including teens and adults!</p>
+              </div>
 
-            <h2>What is your pool like?</h2>
-            <p>Our backyard pool is a heated, salt water pool, and is 18' x 40' with a shallow and deep end, making it great for lessons for all ages. It is surrounded by shade trees, and we have chairs available for parents. Our pool is deep enough to teach all swimming skills excluding standing dives, and large enough to comfortably accommodate up to two private lessons at a time.<br><br></p>
+              <div class="faq-item">
+                <h2 style="background-color: transparent; padding: 0px;">How many sessions should I register for?</h2>
+                <p style="background-color: transparent;">This depends on your swimming goals. If you are looking to pass a Swim for Life level, we recommend registering for 2 or more sessions since 1 week is normally not enough time to fully master the skills required to pass a level.</p>
+              </div>
 
-            <h2>What is your policy for cancellations and refunds?</h2>
-            <p>We do not provide refunds for missed lessons. Please remember that registering for a session is a commitment to attend all lessons. If you can no longer attend your lessons, please let us know in advance as we can sometimes offer an alternative week/time slot. We cannot reschedule your session once the week has already begun.<br><br></p>
+              <div class="faq-item">
+                <h2 style="background-color: transparent; padding: 0px;">What do I need to bring to my first lesson?</h2>
+                <p style="background-color: transparent;">​Please arrive in your swimsuit. Bring a towel, goggles (if needed), and your swimmer's previous report card (if you have one). We ask to please apply any water-resistant sunscreen at least 30 min. before entering the pool. We have a child-size (30-60 lbs.) PFD for learning certain aquatic skills. You're free to bring your own but this isn't necessary. Consider also bringing a hair tie and a water bottle.</p>
+              </div>
+            </div>
 
-            <h2>What is your policy for inclement weather?</h2>
-            <p>Lessons will only be cancelled in cases of severe weather (e.g. thunder, lightning, or torrential downpours), at the instructor's discretion. Lessons will continue as scheduled in light to moderate rain, wind, or other non-dangerous weather. In the case of a pool closure, a make-up lesson will be offered within the next week during our make-up lesson window (Mon-Fri, 8–10 AM). For the final week of summer (Week 9), make-up lessons will be held on Saturday immediately following the session. Make-up lessons outside of these times are often unavailable and cannot be guaranteed.<br><br></p>
-          
-            <h2>Can I register two swimmers in semi-private if they are at different levels?</h2>
-            <p>We are happy to offer semi-private lessons to swimmers at the same level or within 1 level of each other. This is to ensure that instructors can teach and maintain supervision of both swimmers at the same time and plan lessons that are applicable to both swimmers. We ask that you please enrol your children in separate private lessons if this is not the case!<br><br></p>
+            <div class="faq-category">
+              <p class="faq-category__label">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c2-2 4-2 6 0s4 2 6 0 4-2 6 0"></path><path d="M2 18c2-2 4-2 6 0s4 2 6 0 4-2 6 0"></path><path d="M2 6c2-2 4-2 6 0s4 2 6 0 4-2 6 0"></path></svg>
+                The Pool &amp; Facility
+              </p>
 
-            <h2>Which instructor will I be assigned?</h2>
-            <p>We are a team of four instructors, and an instructor will be assigned to you based on our availability at your requested time slot. We understand the importance of consistency over multiple sessions, and we do our best to pair returning students with their previous instructor when possible. However, instructor availability can vary summer to summer and even week to week. If you're a returning client with a specific request, please include it clearly in your registration and we will let you know what's possible.<br><br></p>
-            
-            <h2>How do you accept payment?</h2>
-            <p>We accept e-transfer, and we will send you payment details in your confirmation email within 48hr upon completing the registration form. Please note that time slots are allocated on a first-come first-served basis, and payment is how you secure your spot. You may choose to pay in cash on the first day of your session, but your time slot will not be reserved for you until payment is made.<br><br></p>
+              <div class="faq-item">
+                <h2 style="background-color: transparent; padding: 0px;">Do you have a bathroom and change room?</h2>
+                <p style="background-color: transparent;">We have an indoor bathroom available to students and parents! We still request however that students please use the bathroom before arrival, and arrive in their swimsuits to avoid delays or interruptions to their lessons.</p>
+              </div>
 
-            <h2>What is your referral discount?</h2>
-            <p>We appreciate families who refer friends to Swimcademy! For every friend you refer who completes registration and mentions your name, you will receive a $25 discount on your next session. Registrations are considered complete once payment is received. Discounts apply only to future lessons and cannot be refunded for past payments.<br><br></p>
-            
-            <h2>Where can I park?</h2>
-            <p>There is some limited parking available in our driveway. Please note that there is no legal street parking directly in front of the house, however there is parking on the street just east of the house.<br><br></p>
+              <div class="faq-item">
+                <h2 style="background-color: transparent; padding: 0px;">What is your pool like?</h2>
+                <p style="background-color: transparent;">Our backyard pool is a heated, salt water pool, and is 18' x 40' with a shallow and deep end, making it great for lessons for all ages. It is surrounded by shade trees, and we have chairs available for parents. Our pool is deep enough to teach all swimming skills excluding standing dives, and large enough to comfortably accommodate up to two private lessons at a time.</p>
+              </div>
+
+              <div class="faq-item">
+                <h2 style="background-color: transparent; padding: 0px;">Where can I park?</h2>
+                <p style="background-color: transparent;">There is some limited parking available in our driveway. Please note that there is no legal street parking directly in front of the house, however there is parking on the street just east of the house.</p>
+              </div>
+            </div>
+
+            <div class="faq-category">
+              <p class="faq-category__label">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M16 2v4"></path><path d="M8 2v4"></path><path d="M3 10h18"></path></svg>
+                Scheduling &amp; Policies
+              </p>
+
+              <div class="faq-item">
+                <h2 style="background-color: transparent; padding: 0px;">What is your policy for cancellations and refunds?</h2>
+                <p style="background-color: transparent;">We do not provide refunds for missed lessons. Please remember that registering for a session is a commitment to attend all lessons. If you can no longer attend your lessons, please let us know in advance as we can sometimes offer an alternative week/time slot. We cannot reschedule your session once the week has already begun.</p>
+              </div>
+
+              <div class="faq-item">
+                <h2 style="background-color: transparent; padding: 0px;">What is your policy for inclement weather?</h2>
+                <p style="background-color: transparent;">Lessons will only be cancelled in cases of severe weather (e.g. thunder, lightning, or torrential downpours), at the instructor's discretion. Lessons will continue as scheduled in light to moderate rain, wind, or other non-dangerous weather. In the case of a pool closure, a make-up lesson will be offered within the next week during our make-up lesson window (Mon-Fri, 8–10 AM). For the final week of summer (Week 9), make-up lessons will be held on Saturday immediately following the session. Make-up lessons outside of these times are often unavailable and cannot be guaranteed.</p>
+              </div>
+
+              <div class="faq-item">
+                <h2 style="background-color: transparent; padding: 0px;">Can I register two swimmers in semi-private if they are at different levels?</h2>
+                <p style="background-color: transparent;">We are happy to offer semi-private lessons to swimmers at the same level or within 1 level of each other. This is to ensure that instructors can teach and maintain supervision of both swimmers at the same time and plan lessons that are applicable to both swimmers. We ask that you please enrol your children in separate private lessons if this is not the case!</p>
+              </div>
+
+              <div class="faq-item">
+                <h2 style="background-color: transparent; padding: 0px;">Which instructor will I be assigned?</h2>
+                <p style="background-color: transparent;">We are a team of four instructors, and an instructor will be assigned to you based on our availability at your requested time slot. We understand the importance of consistency over multiple sessions, and we do our best to pair returning students with their previous instructor when possible. However, instructor availability can vary summer to summer and even week to week. If you're a returning client with a specific request, please include it clearly in your registration and we will let you know what's possible.</p>
+              </div>
+            </div>
+
+            <div class="faq-category">
+              <p class="faq-category__label">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M14.5 9a2.5 2.5 0 0 0-2.5-1H11a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-1a2.5 2.5 0 0 1-2.5-1"></path><path d="M12 6v2"></path><path d="M12 16v2"></path></svg>
+                Payment &amp; Referrals
+              </p>
+
+              <div class="faq-item">
+                <h2 style="background-color: transparent; padding: 0px;">How do you accept payment?</h2>
+                <p style="background-color: transparent;">We accept e-transfer, and we will send you payment details in your confirmation email within 48hr upon completing the registration form. Please note that time slots are allocated on a first-come first-served basis, and payment is how you secure your spot. You may choose to pay in cash on the first day of your session, but your time slot will not be reserved for you until payment is made.</p>
+              </div>
+
+              <div class="faq-item">
+                <h2 style="background-color: transparent; padding: 0px;">What is your referral discount?</h2>
+                <p style="background-color: transparent;">We appreciate families who refer friends to Swimcademy! For every friend you refer who completes registration and mentions your name, you will receive a $25 discount on your next session. Registrations are considered complete once payment is received. Discounts apply only to future lessons and cannot be refunded for past payments.</p>
+              </div>
+            </div>
         </div>
     </section>
   </main>
