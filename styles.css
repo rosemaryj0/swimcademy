@@ -106,6 +106,13 @@ nav ul li a:hover {
   background-color: #F5FCFF;
 }
 
+.header-main {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #F5FCFF;
+}
+
 .header-main .logo {
   height: 60px;
   width: 20%;
