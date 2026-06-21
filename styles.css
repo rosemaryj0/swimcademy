@@ -290,7 +290,7 @@ a:visited {
     padding-bottom: 45px;
     background-color: #0072AA;
     text-align: center;
-    border-radius: 70px;
+    border-radius: 50px;
   }
 
   .private-bubble h3,
@@ -304,7 +304,7 @@ a:visited {
     padding-bottom: 45px;
     background-color: #20A3E2;
     text-align: center;
-    border-radius: 70px;
+    border-radius: 50px;
   }
 
   .semi-private-bubble h3,
