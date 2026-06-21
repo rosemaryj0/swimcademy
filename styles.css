@@ -343,7 +343,11 @@ a:visited {
   }
 
   @media only screen and (max-width: 950px) {
-    
+
+    .paragraph-wrapper {
+      width: 85%;
+    }
+      
     .bubble-grid {
       grid-template-columns: 1fr 1fr;
       padding-left: 20px;
