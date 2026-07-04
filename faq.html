@@ -16,6 +16,25 @@
       --white:#FFFFFF;
     }
 
+    body{
+      position:relative;
+    }
+
+    body::before{
+      content:'';
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background-image:linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('waterbackground.webp');
+      background-blend-mode:lighten;
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+      z-index:-1;
+    }
+
     .faq-category{
       margin-top:48px;
     }
@@ -86,7 +105,7 @@
   <main>
     <section class="session-info-paragraph">
         <div class="paragraph-wrapper">
-            <h4>FAQ</h4>
+            <h4 style="background-color: transparent;">FAQ</h4>
 
             <div class="faq-category">
               <p class="faq-category__label">
@@ -96,7 +115,8 @@
 
               <div class="faq-item">
                 <h2 style="background-color: transparent; padding: 0px;">Why should I choose Swimcademy?</h2>
-                <p style="background-color: transparent;">With Swimcademy, you're guaranteed to have a fully certified instructor with 4+ years of teaching experience, and a competitive swimming background. We are fully licensed by the Lifesaving Society to teach and evaluate to their standard, assuring your child will work on important skills that are transferrable to programs offered by the town and other organizations. Our instructors are dedicated to each swimmer and helping them succeed. We pride ourselves in our attention to technique and use personalized lesson plans to see results!</p>
+                <p style="background-color: transparent; padding-bottom: 10px;">With Swimcademy, you are guaranteed a fully certified instructor with 4+ years of teaching experience and a competitive swimming background. We are fully licensed by the Lifesaving Society to teach and evaluate to their standard, assuring your child will work on important skills that are transferrable to programs offered by the town and other organizations.</p>
+                <p style="background-color: transparent;">Our instructors are dedicated to each swimmer and helping them succeed. We pride ourselves in our attention to technique and use personalized lesson plans to see results!</p>
               </div>
 
               <div class="faq-item">
