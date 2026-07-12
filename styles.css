@@ -282,6 +282,7 @@ a:visited {
     margin: auto;
     padding: 60px;
     width: 70%;
+    max-width: 1700px;
     gap: 25px;
     /*align-items: center; /* Center items vertically */
     display: grid;
